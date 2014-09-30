@@ -1,0 +1,36 @@
+{
+  "name": "generator-meanie",
+  "version": "0.0.0",
+  "description": "MEAN stack generator for Yeoman. Follows the Best Practice Recommendations for Angular App Structure",
+  "license": "MIT",
+  "main": "app/index.js",
+  "repository": "levisl176/generator-meanie",
+  "author": {
+    "name": "Levi Lindsey",
+    "email": "levisl176@gmail.com",
+    "url": "https://github.com/levisl176"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "app"
+  ],
+  "keywords": [
+    "yeoman-generator, mean, node, angular, mongo, express, nodejs, angularjs, mongodb, grunt"
+  ],
+  "dependencies": {
+    "yeoman-generator": "~0.17.7",
+    "chalk": "^0.5.0",
+    "yosay": "^0.3.0"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "peerDependencies": {
+    "yo": ">=1.0.0"
+  }
+}

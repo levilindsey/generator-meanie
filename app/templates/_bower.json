@@ -1,0 +1,10 @@
+{
+  "name": "app-name",
+  "version": "0.0.0",
+  "description": "app description",
+  "private": false,
+  "dependencies": {
+    "angular": "1.2.16",
+    "angular-touch": "1.2.16"
+  }
+}
