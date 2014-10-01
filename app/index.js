@@ -41,6 +41,32 @@ var MeanieGenerator = yeoman.generators.Base.extend({
       this.src.copy('editorconfig', '.editorconfig');
       this.src.copy('jshintrc', '.jshintrc');
       this.src.copy('gitignore', '.gitignore');
+
+      **;// TODO: add gulp/grunt files (or rather, just implement the synchronous, recursive, dynamic fs walk solution...)
+//      var fs = require('fs');
+//      var walk = function(dir, done) {
+//        var results = [];
+//        fs.readdir(dir, function(err, list) {
+//          if (err) return done(err);
+//          var i = 0;
+//          (function next() {
+//            var file = list[i++];
+//            if (!file) return done(null, results);
+//            file = dir + '/' + file;
+//            fs.stat(file, function(err, stat) {
+//              if (stat && stat.isDirectory()) {
+//                walk(file, function(err, res) {
+//                  results = results.concat(res);
+//                  next();
+//                });
+//              } else {
+//                results.push(file);
+//                next();
+//              }
+//            });
+//          })();
+//        });
+//      };
     },
 
     _createAppFrontEndFiles: function () {
