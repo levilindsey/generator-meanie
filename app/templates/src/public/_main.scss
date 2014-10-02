@@ -1,1 +1,61 @@
+// --- Shared values --- //
+
+$colors: (
+  black: #000000,
+  white: #FFFFFF,
+
+  gray-1: #444444,
+  gray-2: #888888,
+
+  blue-1: #2299EE,
+  blue-2: #77CCFF
+);
+
+$font-sizes: (
+  xs: px2unit(10px),
+  s: px2unit(12px),
+  m: px2unit(16px),
+  l: px2unit(22px),
+  xl: px2unit(32px),
+);
+
+@font-face {
+  font-family: font-name;
+  src: url('../fonts/**');// TODO: add custom font
+}
+
+@function color($color-nam) {
+  @return map-get($colors, $color-name);
+}
+
+@function font-size($size-name) {
+  @return map-get($font-sizes, $size-name);
+}
+
+// --- General styles --- //
+
+ul, ol, dl, dd, dt, li, div, body, p, form, hr, h1, h2, h3, h4, h5, img, button {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  padding-left: 0;
+  list-style-type: none;
+  width: 100%;
+}
+
+html {
+  font-size: font-size(m);
+  line-height: font-size(m);
+}
+
+body {
+  font-family: sans-serif;
+  color: color(black);
+  background-color: color(white);
+}
+
+// --- Include all partials --- //
+
 // TODO:

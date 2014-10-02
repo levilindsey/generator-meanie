@@ -18,4 +18,5 @@
   "trailing": true,
   "smarttabs": true,
   "white": true
+  // TODO: change the above items; add additional items for angular-specific logic;
 }

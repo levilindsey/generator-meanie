@@ -1,1 +1,37 @@
-<!-- TODO:  -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+        content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+  <title>app-name</title>
+
+  <link rel="icon"
+        type="image/png"
+        href="images/favicon-16x16.png"
+        sizes="16x16">
+  <link rel="icon"
+        type="image/png"
+        href="images/favicon-32x32.png"
+        sizes="32x32">
+
+  <link href="styles/lib.css"
+        rel="stylesheet">
+  <link href="styles/main.css"
+        rel="stylesheet">
+</head>
+<body ng-app="appNameApp">
+<!-- START SVG STORE -->
+<!-- TODO: copy the generated svg store to here-->
+<!-- END SVG STORE -->
+
+<div ui-view
+     id="route-view"
+     class="{{routeState.stateName + '-route'}}"></div>
+
+<script src="scripts/lib.js"></script>
+<script src="scripts/templates.js"></script>
+<script src="scripts/app-name.js"></script>
+</body>
+</html>
