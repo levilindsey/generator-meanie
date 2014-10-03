@@ -1,3 +1,18 @@
+/**
+ * Converts a pixel value to em, rem, or % based on a base size
+ * NOTE: For percent units, pass 100% as the $unit
+ * @param  {Number} $pixels             Number of pixels to convert; must be a pixel value
+ * @param  {Number} $unit: 1rem         Unit of the return value; can be em, rem, or %
+ * @param  {Number} $base: $base-size   Base size; must be a pixel value
+ * @return {Number}                     ($pixels / $base) * $unit
+ */
+@function px2unit($pixels, $unit: 1rem, $base: 16px) {
+  @if unit($pixels) != px { @error 'px2unit error: $pixels must be a pixel value; was #{$pixels}'; }
+  @if unitless($unit)     { @error 'px2unit error: $unit may not be unitless; was #{$unit}'; }
+  @if unit($base) != px   { @error 'px2unit error: $base must be a pixel value; was #{$base}'; }
+  @return ($pixels / $base) * $unit;
+}
+
 // --- Shared values --- //
 
 $colors: (
@@ -8,7 +23,10 @@ $colors: (
   gray-2: #888888,
 
   blue-1: #2299EE,
-  blue-2: #77CCFF
+  blue-2: #77CCFF,
+
+  yellow-1: #D6AF00,
+  yellow-2: #FFE675
 );
 
 $font-sizes: (
@@ -58,4 +76,9 @@ body {
 
 // --- Include all partials --- //
 
-// TODO:
+@import 'components/nav-bar/nav-bar';
+@import 'components/svg-icon/svg-icon';
+@import 'components/toast/toast';
+
+@import 'routes/home/home';
+@import 'routes/login/login';
