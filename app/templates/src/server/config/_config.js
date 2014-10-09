@@ -23,11 +23,11 @@ config.app.port = 3000;
 config.app.url = 'http://localhost:' + config.app.port;
 
 // Locations of some important files
-config.srcPath = projectRoot + '/src';
 config.distPath = projectRoot + '/dist';
-config.resPath = projectRoot + '/res';
-config.bowerPath = projectRoot + '/bower_components';
-config.faviconPath = config.distPath + '/images/favicon-32x32.png';// TODO: add this
+config.viewsPath = projectRoot + '/src/server/views';
+config.faviconPath = config.distPath + '/images/favicon-32x32.png';
+config.indexPath = config.distPath + '/index.html';
+config.pageMissingPath = config.viewsPath + '/404.ejs';
 
 // Variables that depend on the current execution environment
 switch (config.environment) {

@@ -42,7 +42,7 @@ $font-sizes: (
   src: url('../fonts/**');// TODO: add custom font
 }
 
-@function color($color-nam) {
+@function color($color-name) {
   @return map-get($colors, $color-name);
 }
 

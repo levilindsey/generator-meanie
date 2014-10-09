@@ -14,18 +14,19 @@ angular.module('appNameApp', [
 //  'someService',
 
   // Components
-  'navBarDirectives',
   'svgIconDirectives',
   'toastDirectives',
 
   // Models
+  'dataNameService',
   'userService',
 
   // Routes
-  'homeController',
-  'loginController'
+  'homeController'
 ])
 
-    .run(function () {
+    .run(function ($rootScope) {
+      $rootScope.routeState = {};
+
       // TODO:
     });

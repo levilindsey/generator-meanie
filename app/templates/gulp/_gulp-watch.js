@@ -1,6 +1,6 @@
 var gulp = require('gulp');
 var plugins = require("gulp-load-plugins")({lazy: false});
-var config = require('./gulp/config');
+var config = require('./config');
 
 gulp.task('watch', ['tdd'], function () {
   gulp.watch([

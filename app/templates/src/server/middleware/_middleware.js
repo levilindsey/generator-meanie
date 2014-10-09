@@ -18,23 +18,24 @@ exports.init = function (server) {
       cookieParser = require('cookie-parser'),
       session = require('express-session'),
       MongoStore = require('connect-mongo')(session),
+      database = require('../database/database'),
       staticFiles = require('./static-files');
 
   // Set up the templating engine
   server.set('views', __dirname);
   server.set('view engine', 'ejs');
 
-  server.use(morgan({ format: 'dev', immediate: true }));
+  server.use(morgan('dev', {immediate: true}));
   server.use(favicon(config.faviconPath));
-  server.use(bodyParser());
+  server.use(bodyParser.json());
   server.use(cookieParser());
-  server.use(session({
-    secret: config.labs.sessionSecret,
-    store: new MongoStore({
-      mongoose_connection: db.getDatabaseConnection(),
-      collection: 'sessions'
-    })
-  }));
+//  server.use(session({
+//    secret: config.app.sessionSecret,
+//    store: new MongoStore({
+//      mongoose_connection: database.getDatabaseConnection(),
+//      collection: 'sessions'
+//    })
+//  }));
 
   staticFiles.init(server);
 };
