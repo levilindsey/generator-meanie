@@ -14,13 +14,16 @@ angular.module('appNameApp', [
 //  'someService',
 
   // Components
-//  'someDirectives',
+  'navBarDirectives',
+  'svgIconDirectives',
+  'toastDirectives',
 
   // Models
-//  'someService',
+  'userService',
 
   // Routes
-//  'someController'
+  'homeController',
+  'loginController'
 ])
 
     .run(function () {
