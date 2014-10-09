@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('momentousApp', [
+angular.module('appNameApp', [
   // Third-party libraries
   'ui.router',
 
