@@ -2,6 +2,7 @@
 
 > [Yeoman](http://yeoman.io) generator
 
+_This project is a work in progress_
 
 ## Getting Started
 
