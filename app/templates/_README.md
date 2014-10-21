@@ -1,5 +1,23 @@
 # app-name
 
+# _REPLACE VARIOUS NAME STRINGS_
+
+Search for:
+
+- app-name
+- project-name
+- user-name
+- domain-name
+- appName
+- appNameApp
+- dataNameService
+- DataName
+- someDataUrl
+- font-name
+- component-name
+- component-name_test
+- app description
+
 TODO: project description
 
 ## Development Setup

@@ -1,5 +1,6 @@
 var config = {};
 
+config.host = '0.0.0.0';
 config.port = 9000;
 
 config.srcPath = 'src';
@@ -12,7 +13,7 @@ config.serverPath = config.srcPath + '/server';
 
 config.karmaConfigPath = 'karma.conf.js';
 
-config.scriptDistFileName = 'levi.sl.js';
+config.scriptDistFileName = 'app-name.js';
 config.vendorScriptDistFileName = 'lib.js';
 config.vendorStyleDistFileName = 'lib.css';
 
@@ -26,6 +27,7 @@ config.stylesSrc = config.publicPath + '/**/*.scss';
 config.templatesSrc = [config.publicPath + '/**/*.html', '!' + config.indexSrc];
 config.mediaSrc = config.resPath + '/**';
 config.iconsSrc = config.resPath + '/images/icons/*.svg';
+config.deviceIconsSrc = config.resPath + '/images/device-icons/*';
 
 config.distGlob = config.distPath + '/**';
 
@@ -36,5 +38,8 @@ config.vendorScriptsSrc =
     [config.bowerPath + '/**/*.js', '!' + config.bowerPath + '/**/*.min.js'];
 config.vendorStylesSrc =
     [config.bowerPath + '/**/*.css', '!' + config.bowerPath + '/**/*.min.css'];
+
+config.buildTasks = ['scripts', 'styles', 'vendor-scripts', 'vendor-styles', 'templates',
+  'svg-icons', 'copy-index', 'copy-media', 'watch'];
 
 module.exports = config;
