@@ -43,6 +43,11 @@ var MeanieGenerator = yeoman.generators.Base.extend({
         type: 'input',
         name: 'gitHubUsername',
         message: 'What is your GitHub username?'
+      },
+      {
+        type: 'input',
+        name: 'googleAnalyticsTrackingId',
+        message: 'What is your Google Analytics tracking ID?'
       }
     ];
 
@@ -56,6 +61,7 @@ var MeanieGenerator = yeoman.generators.Base.extend({
       this.appShortenedUrl = properties.appCompleteUrl ?
         properties.appCompleteUrl.replace(/^.*:\/\//, '') : '<url-name>';
       this.gitHubUsername = properties.gitHubUsername;
+      this.googleAnalyticsTrackingId = properties.googleAnalyticsTrackingId;
 
       done();
     }.bind(this));
