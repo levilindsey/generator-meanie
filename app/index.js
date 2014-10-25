@@ -49,10 +49,12 @@ var MeanieGenerator = yeoman.generators.Base.extend({
     this.prompt(prompts, function (properties) {
       this.appHumanReadableName = properties.appHumanReadableName;
       this.appHyphenatedName = properties.appHyphenatedName;
-      this.appCamelCaseName = this._.camelize(properties.appHyphenatedName);
+      this.appCamelCaseName = properties.appHyphenatedName ?
+        this._.camelize(properties.appHyphenatedName): '<appName>';
       this.appDescription = properties.appDescription;
       this.appCompleteUrl = properties.appCompleteUrl;
-      this.appShortenedUrl = properties.appCompleteUrl.replace(/^.*:\/\//, '');
+      this.appShortenedUrl = properties.appCompleteUrl ?
+        properties.appCompleteUrl.replace(/^.*:\/\//, '') : '<url-name>';
       this.gitHubUsername = properties.gitHubUsername;
 
       done();
