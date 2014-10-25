@@ -2,6 +2,7 @@
   "name": "<%= appHyphenatedName %>",
   "version": "0.0.0",
   "description": "<%= appDescription %>",
+  "license": "MIT",
   "private": false,
   "dependencies": {
     "q": "^1.0.1",

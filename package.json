@@ -1,6 +1,6 @@
 {
   "name": "generator-meanie",
-  "version": "0.0.0",
+  "version": "0.2.0",
   "description": "MEAN stack generator for Yeoman. Follows the Best Practice Recommendations for Angular App Structure",
   "license": "MIT",
   "main": "app/index.js",
@@ -10,6 +10,10 @@
     "email": "levisl176@gmail.com",
     "url": "https://github.com/levisl176"
   },
+  "bugs": {
+    "url": "http://github.com/levisl176/generator-meanie/issues"
+  },
+  "license": "MIT",
   "engines": {
     "node": ">=0.10.0"
   },
