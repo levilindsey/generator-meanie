@@ -1,8 +1,7 @@
 # generator-meanie [![Build Status](https://secure.travis-ci.org/levisl176/generator-meanie.png?branch=master)](https://travis-ci.org/levisl176/generator-meanie)
 
 _MEAN stack generator for [Yeoman](http://yeoman.io). Follows the 
-[Best Practice Recommendations for Angular App Structure]
-(https://docs.google.com/document/d/1XXMvReO8-Awi1EZXAXS4PzDzdNvV6pGcuaF4Q9821Es/pub)._
+[Best Practice Recommendations for Angular App Structure](https://docs.google.com/document/d/1XXMvReO8-Awi1EZXAXS4PzDzdNvV6pGcuaF4Q9821Es/pub)._
 
 ## [Getting Set Up](./doc/getting-set-up.md)
 
