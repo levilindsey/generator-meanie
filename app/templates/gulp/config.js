@@ -9,9 +9,11 @@ config.resPath = 'res';
 config.bowerPath = 'bower_components';
 
 config.publicPath = config.srcPath + '/public';
-config.serverPath = config.srcPath + '/server';
+config.serverPath = '../' + config.srcPath + '/server';
 
-config.karmaConfigPath = 'karma.conf.js';
+config.serverScriptPath = config.serverPath + '/main';
+
+config.karmaConfigPath = config.srcPath + '/karma.conf.js';
 
 config.scriptDistFileName = '<%= appHyphenatedName %>.js';
 config.vendorScriptDistFileName = 'lib.js';
@@ -40,6 +42,6 @@ config.vendorStylesSrc =
     [config.bowerPath + '/**/*.css', '!' + config.bowerPath + '/**/*.min.css'];
 
 config.buildTasks = ['scripts', 'styles', 'vendor-scripts', 'vendor-styles', 'templates',
-  'svg-icons', 'copy-index', 'copy-media', 'watch'];
+  'svg-icons', 'copy-index', 'copy-media', 'copy-device-icons', 'watch'];
 
 module.exports = config;

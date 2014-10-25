@@ -25,7 +25,7 @@ config.app.url = 'http://localhost:' + config.app.port;
 // Locations of some important files
 config.distPath = projectRoot + '/dist';
 config.viewsPath = projectRoot + '/src/server/views';
-config.faviconPath = config.distPath + '/images/favicon-32x32.png';
+config.faviconPath = config.distPath + '/favicon-32x32.png';
 config.indexPath = config.distPath + '/index.html';
 config.pageMissingPath = config.viewsPath + '/404.ejs';
 
