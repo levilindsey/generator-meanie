@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('appNameApp', [
+angular.module('<%= appCamelCaseName %>App', [
   // Third-party libraries
   'ui.router',
 

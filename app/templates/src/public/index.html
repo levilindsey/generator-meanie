@@ -5,7 +5,7 @@
   <meta name="viewport"
         content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
 
-  <title>app-name</title>
+  <title><%= appHumanReadableName %></title>
 
   <!-- Favicons for browsers -->
   <link rel="icon"
@@ -18,15 +18,15 @@
         sizes="32x32">
 
   <!-- Icons for showing on the home screens of Android and iOS devices -->
-  <link href="http://domain-name/apple-touch-icon.png"
+  <link href="<%= appUrl %>/apple-touch-icon.png"
         rel="apple-touch-icon">
-  <link href="http://domain-name/apple-touch-icon-76x76.png"
+  <link href="<%= appUrl %>/apple-touch-icon-76x76.png"
         rel="apple-touch-icon"
         sizes="76x76">
-  <link href="http://domain-name/apple-touch-icon-120x120.png"
+  <link href="<%= appUrl %>/apple-touch-icon-120x120.png"
         rel="apple-touch-icon"
         sizes="120x120">
-  <link href="http://domain-name/apple-touch-icon-152x152.png"
+  <link href="<%= appUrl %>/apple-touch-icon-152x152.png"
         rel="apple-touch-icon"
         sizes="152x152">
 
@@ -35,7 +35,7 @@
   <link href="styles/main.css"
         rel="stylesheet">
 </head>
-<body ng-app="appNameApp">
+<body ng-app="<%= appCamelCaseName %>App">
 <!-- START SVG STORE -->
 <!-- TODO: copy the generated svg store to here-->
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="0" height="0" style="position:absolute">
@@ -52,6 +52,6 @@
 
 <script src="scripts/lib.js"></script>
 <script src="scripts/templates.js"></script>
-<script src="scripts/app-name.js"></script>
+<script src="scripts/<%= appHyphenatedName %>.js"></script>
 </body>
 </html>

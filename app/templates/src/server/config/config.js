@@ -33,7 +33,7 @@ config.pageMissingPath = config.viewsPath + '/404.ejs';
 switch (config.environment) {
   case 'development':
     config.app.port = 3000;
-    config.app.url = 'http://localhost:' + config.app.port;
+    config.app.url = '0.0.0.0:' + config.app.port;
     break;
   case 'test':
     config.app.port = process.env.PORT || 3000;

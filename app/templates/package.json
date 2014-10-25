@@ -1,7 +1,7 @@
 {
-  "name": "app-name",
+  "name": "<%= appHyphenatedName %>",
   "version": "0.0.0",
-  "description": "app description",
+  "description": "<%= appDescription %>",
   "private": false,
   "dependencies": {
     "q": "^1.0.1",

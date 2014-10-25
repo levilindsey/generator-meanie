@@ -13,7 +13,7 @@ config.serverPath = config.srcPath + '/server';
 
 config.karmaConfigPath = 'karma.conf.js';
 
-config.scriptDistFileName = 'app-name.js';
+config.scriptDistFileName = '<%= appHyphenatedName %>.js';
 config.vendorScriptDistFileName = 'lib.js';
 config.vendorStyleDistFileName = 'lib.css';
 

@@ -37,10 +37,10 @@ $font-sizes: (
   xl: px2unit(32px),
 );
 
-@font-face {
-  font-family: font-name;
-  src: url('../fonts/**');// TODO: add custom font
-}
+//@font-face {
+//  font-family: font-name;
+//  src: url('../fonts/**');// TODO: add custom font
+//}
 
 @function color($color-name) {
   @return map-get($colors, $color-name);
