@@ -41,6 +41,11 @@ var MeanieGenerator = yeoman.generators.Base.extend({
       },
       {
         type: 'input',
+        name: 'authorFullName',
+        message: 'What is your full name or your company\'s name?'
+      },
+      {
+        type: 'input',
         name: 'gitHubUsername',
         message: 'What is your GitHub username?'
       },
@@ -60,6 +65,7 @@ var MeanieGenerator = yeoman.generators.Base.extend({
       this.appCompleteUrl = properties.appCompleteUrl;
       this.appShortenedUrl = properties.appCompleteUrl ?
         properties.appCompleteUrl.replace(/^.*:\/\//, '') : '<url-name>';
+      this.authorFullName = properties.authorFullName;
       this.gitHubUsername = properties.gitHubUsername;
       this.googleAnalyticsTrackingId = properties.googleAnalyticsTrackingId;
 

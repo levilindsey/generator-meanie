@@ -23,8 +23,8 @@ describe('meanie:app', function () {
       '.gitignore',
       '.jshintrc',
       'bower.json',
-      'Gruntfile.js',
       'gulpfile.js',
+      'LICENSE',
       'package.json',
       'README.md'
     ]);
