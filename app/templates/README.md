@@ -1,8 +1,8 @@
 # <%= appHyphenatedName %>
 
-#### <%= appDescription %>_
+#### <%= appDescription %>
 
-_See this running at [appShortenedUrl](<%= appCompleteUrl %>.com)!_
+_See this running at [appShortenedUrl](<%= appCompleteUrl %>)!_
 
 - [Getting Set Up](./docs/getting-set-up.md)
 - [Understanding the Code](./docs/understanding-the-code.md)
@@ -26,4 +26,4 @@ This project uses technology from a number of third-parties. These technologies 
 
 MIT
 
-[![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=<%= gitHubUsername %&url=github.com/<%= gitHubUsername %/<%= appHyphenatedName %>&title=<%= appHyphenatedName %>&language=javascript&tags=github&category=software)
+[![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=<%= gitHubUsername %>&url=github.com/<%= gitHubUsername %>/<%= appHyphenatedName %>&title=<%= appHyphenatedName %>&language=javascript&tags=github&category=software)
