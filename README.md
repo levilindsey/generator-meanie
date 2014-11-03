@@ -1,10 +1,14 @@
 # generator-meanie [![Build Status](https://secure.travis-ci.org/levisl176/generator-meanie.png?branch=master)](https://travis-ci.org/levisl176/generator-meanie)
 
-_MEAN stack generator for [Yeoman](http://yeoman.io). Follows the 
+_MEAN stack generator for [Yeoman](http://yeoman.io) with gulp. Follows the 
 [Best Practice Recommendations for Angular App Structure](https://docs.google.com/document/d/1XXMvReO8-Awi1EZXAXS4PzDzdNvV6pGcuaF4Q9821Es/pub)._
 
-This project is an on-going effort to collect common patterns and processes for web apps using the MEAN stack and gulp. 
+This project is an on-going effort to collect common patterns and processes for web apps using the MEAN stack and gulp.
+
 This project is constantly evolving and likely has some partially completed components.
+
+The contents of this project is strongly opinionated. This is all code that was developed by the original author for 
+his own personal use. That being said, it works great for him, so it will probably work great for you too!
 
 ## [Getting Set Up](./docs/getting-set-up.md)
 
