@@ -17,8 +17,7 @@ angular.module('routes', [])
     })
 
     .run(function ($rootScope) {
-      $rootScope.$on('$stateChangeStart', function (event, toState, toParams, fromState,
-                                                    fromParams) {
+      $rootScope.$on('$stateChangeStart', function (event, toState, toParams, fromState, fromParams) {
         console.debug('$stateChangeStart', toState.name);
 
         $rootScope.routeState.stateName = toState.name;
@@ -28,13 +27,11 @@ angular.module('routes', [])
         console.error('$stateNotFound', unfoundState.name);
       });
 
-      $rootScope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState,
-                                                      fromParams) {
+      $rootScope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState, fromParams) {
         console.debug('$stateChangeSuccess', toState.name);
       });
 
-      $rootScope.$on('$stateChangeError', function (event, toState, toParams, fromState,
-                                                    fromParams, error) {
+      $rootScope.$on('$stateChangeError', function (event, toState, toParams, fromState, fromParams, error) {
         console.error('$stateChangeError', toState.name, error);
       });
 

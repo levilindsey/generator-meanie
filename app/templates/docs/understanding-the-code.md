@@ -10,10 +10,9 @@ TODO
 
 ##### `src/`
 
-This directory contains all of the front-end logic. For the most part, the contents of this 
-directory is organized according to the [Best Practice Recommendations for Angular App Structure]
-(https://docs.google.com/document/d/1XXMvReO8-Awi1EZXAXS4PzDzdNvV6pGcuaF4Q9821Es/pub). However, 
-the file structure of this app contains many small changes from this original specification.
+This directory contains all of the front-end logic. For the most part, the contents of this  directory is organized 
+according to the [Best Practice Recommendations for Angular App Structure](https://docs.google.com/document/d/1XXMvReO8-Awi1EZXAXS4PzDzdNvV6pGcuaF4Q9821Es/pub). 
+However, the file structure of this app contains many small changes from this original specification.
 
 ##### `res/`
 
