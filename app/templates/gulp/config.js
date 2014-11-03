@@ -1,7 +1,6 @@
 var config = {};
 
-config.host = '0.0.0.0';
-config.port = 9000;
+// --- Server file-system paths --- //
 
 config.srcPath = 'src';
 config.distPath = 'dist';
@@ -11,7 +10,7 @@ config.bowerPath = 'bower_components';
 config.publicPath = config.srcPath + '/public';
 config.serverPath = '../' + config.srcPath + '/server';
 
-config.serverScriptPath = config.serverPath + '/main';
+config.serverMainPath = config.serverPath + '/main';
 
 config.karmaConfigPath = config.srcPath + '/karma.conf.js';
 
@@ -26,8 +25,9 @@ config.scriptsSrc = [config.publicPath + '/**/*.js', '!' + config.testsSrc];
 config.stylesPartialsSrc = config.publicPath + '/**/_*.scss';
 config.stylesMainSrc = config.publicPath + '/main.scss';
 config.stylesSrc = config.publicPath + '/**/*.scss';
-config.templatesSrc = [config.publicPath + '/**/*.html', '!' + config.indexSrc];
-config.mediaSrc = config.resPath + '/**';
+config.angularTemplatesSrc = [config.publicPath + '/**/*.html', '!' + config.indexSrc];
+config.imagesSrc = config.resPath + '/images/**/*.+(png|jpg|gif)';
+config.mediaSrc = [config.resPath + '/**', '!' + config.imagesSrc];
 config.iconsSrc = config.resPath + '/images/icons/*.svg';
 config.deviceIconsSrc = config.resPath + '/images/device-icons/*';
 
@@ -41,7 +41,16 @@ config.vendorScriptsSrc =
 config.vendorStylesSrc =
     [config.bowerPath + '/**/*.css', '!' + config.bowerPath + '/**/*.min.css'];
 
-config.buildTasks = ['scripts', 'styles', 'vendor-scripts', 'vendor-styles', 'templates',
-  'svg-icons', 'copy-index', 'copy-media', 'copy-device-icons', 'watch'];
+// --- Front-end routes --- //
+
+
+
+// ---  --- //
+
+config.buildTasks = ['scripts', 'styles', 'vendor-scripts', 'vendor-styles', 'angular-templates', 'svg-icons',
+  'templates', 'copy-media', 'copy-device-icons', 'compress-images', 'watch'];
+
+config.host = '0.0.0.0';
+config.port = 3000;
 
 module.exports = config;

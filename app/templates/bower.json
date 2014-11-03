@@ -4,7 +4,8 @@
   "description": "<%= appDescription %>",
   "private": false,
   "dependencies": {
-    "angular": "~1.2.26",
+    "angular": "~1.3.1",
+    "angular-material": "~0.5.1",
     "angular-ui-router": "~0.2.11"
   }
 }

@@ -4,16 +4,16 @@
 
 _See this running at [appShortenedUrl](<%= appCompleteUrl %>.com)!_
 
-- [Getting Set Up](./doc/getting-set-up.md)
-- [Understanding the Code](./doc/understanding-the-code.md)
+- [Getting Set Up](./docs/getting-set-up.md)
+- [Understanding the Code](./docs/understanding-the-code.md)
 
 ## Acknowledgements / Technology Stack
 
 This project uses technology from a number of third-parties. These technologies include:
 
+- [Node.js](http://nodejs.org/)
 - [AngularJS](https://angularjs.org/)
 - [gulp.js](http://http://gulpjs.com/)
-- [Grunt](http://gruntjs.com/)
 - [SASS](http://sass-lang.com/)
 - [Yeoman](http://yeoman.io/)
 - [Git](http://git-scm.com/)

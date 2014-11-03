@@ -11,4 +11,4 @@ function loadTasks(includes) {
       });
 }
 
-loadTasks(['./gulp/**/*.js']);
+loadTasks(['./gulp/**/*.js', '!./**/config.js']);
