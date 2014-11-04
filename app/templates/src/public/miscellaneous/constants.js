@@ -1,3 +1,5 @@
-angular.module('constants', [])
+(function () {
+  angular.module('constants', [])
 
     .constant('appName', '<%= appHumanReadableName %>');
+})();

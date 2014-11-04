@@ -1,5 +1,9 @@
-angular.module('loginController', [])
+(function () {
+  angular.module('loginController', [])
 
-    .controller('LoginCtrl', function ($scope) {
-      $scope.loginState = {};
-    });
+    .controller('LoginCtrl', LoginCtrl);
+
+  function LoginCtrl() {
+    var login = this;
+  }
+})();

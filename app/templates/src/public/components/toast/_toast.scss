@@ -1,7 +1,5 @@
 toast {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
   position: absolute;
 
   margin: auto;
@@ -11,6 +9,8 @@ toast {
   height: px2unit(40px);
   border: 1px solid color(yellow-1);
   font-size: font-size(m);
+
+  text-align: center;
 
   background-color: color(yellow-2);
   opacity: 0;

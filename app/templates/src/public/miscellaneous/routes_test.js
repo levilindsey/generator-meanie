@@ -1,4 +1,4 @@
-describe('user-service_test', function () {
+describe('routes_test', function () {
   // TODO:
 
   it('should assert something', function () {

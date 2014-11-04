@@ -1,32 +1,35 @@
 'use strict';
 
-angular.module('<%= appCamelCaseName %>App', [
-  // Third-party libraries
-  'ui.router',
+(function () {
+  angular.module('<%= appCamelCaseName %>App', [
+    // Third-party libraries
+    'ui.router',
 
-  // As part of the build process, all partials are automatically added the angular template cache
-  'templates',
+    // As part of the build process, all partials are automatically added the angular template cache
+    'templates',
 
-  // Helpers
-  'constants',
-  'routes',
+    // Miscellaneous
+    'constants',
+    'routes',
 //  'someFilter',
 //  'someService',
 
-  // Components
-  'svgIconDirectives',
-  'toastDirectives',
+    // Components
+    'navBarDirective',
+    'svgIconDirective',
+    'toastDirective',
 
-  // Models
-  'dataNameService',
-  'userService',
+    // Models
+    'dataNameService',
+    'userService',
 
-  // Routes
-  'homeController'
-])
+    // Routes
+    'homeController'
+  ])
 
     .run(function ($rootScope) {
       $rootScope.routeState = {};
 
       // TODO:
     });
+})();
