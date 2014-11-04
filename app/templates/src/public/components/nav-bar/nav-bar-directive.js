@@ -1,5 +1,5 @@
 (function () {
-  angular.module('navBarDirective', [])
+  angular.module('<%= appPrefix %>NavBarDirective', [])
 
     .directive('<%= appPrefix %>NavBar', <%= appPrefix %>NavBar);
 

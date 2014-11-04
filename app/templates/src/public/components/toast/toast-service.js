@@ -1,5 +1,5 @@
 (function () {
-  angular.module('toastService', [])
+  angular.module('<%= appPrefix %>ToastService', [])
 
     .factory('Toast', Toast);
 

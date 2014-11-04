@@ -1,3 +1,5 @@
+'use strict';
+
 describe('routes_test', function () {
   // TODO:
 

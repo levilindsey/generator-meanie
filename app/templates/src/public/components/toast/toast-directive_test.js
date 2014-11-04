@@ -1,3 +1,5 @@
+'use strict';
+
 describe('toast-directive_test', function () {
   // TODO:
 

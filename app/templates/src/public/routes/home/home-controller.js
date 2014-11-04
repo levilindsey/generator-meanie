@@ -1,5 +1,5 @@
 (function () {
-  angular.module('homeController', [])
+  angular.module('<%= appPrefix %>HomeController', [])
 
     .controller('HomeCtrl', HomeCtrl);
 

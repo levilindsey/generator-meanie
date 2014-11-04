@@ -18,10 +18,25 @@ config.scriptDistFileName = '<%= appHyphenatedName %>.js';
 config.vendorScriptDistFileName = 'lib.js';
 config.vendorStyleDistFileName = 'lib.css';
 
-config.testsSrc = config.publicPath + '/**/*_test.js';
+config.frontEndTestsSrc = [
+  config.distPath + '/lib.js',
+  config.bowerPath + '/angular-mocks/angular-mocks.js',
+  config.distPath + '/app.js',
+  config.distPath + '/templates.js',
+  config.publicPath + '/**/*_test.js'
+];
+
+config.backEndTestsSrc = [
+  config.serverPath + '/**/*_test.js'
+];
+
 config.indexSrc = config.publicPath + '/index.html';
 
-config.scriptsSrc = [config.publicPath + '/**/*.js', '!' + config.testsSrc];
+config.scriptsSrc = [
+  config.publicPath + '/**/*.js',
+  '!' + config.frontEndTestsSrc,
+  '!' + config.backEndTestsSrc
+];
 config.stylesPartialsSrc = config.publicPath + '/**/_*.scss';
 config.stylesMainSrc = config.publicPath + '/main.scss';
 config.stylesSrc = config.publicPath + '/**/*.scss';

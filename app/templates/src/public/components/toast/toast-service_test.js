@@ -1,3 +1,5 @@
+'use strict';
+
 describe('toast-service_test', function () {
   // TODO:
 

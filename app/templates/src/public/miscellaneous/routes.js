@@ -1,5 +1,5 @@
 (function () {
-  angular.module('routes', [])
+  angular.module('<%= appPrefix %>Routes', [])
 
     .config(config)
     .run(run);

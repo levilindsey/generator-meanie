@@ -1,5 +1,5 @@
 (function () {
-  angular.module('svgIconDirective', [])
+  angular.module('<%= appPrefix %>SvgIconDirective', [])
 
     .directive('<%= appPrefix %>SvgIcon', <%= appPrefix %>SvgIcon);
 

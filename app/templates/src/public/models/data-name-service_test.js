@@ -1,3 +1,5 @@
+'use strict';
+
 describe('data-name-service_test', function () {
   // TODO:
 

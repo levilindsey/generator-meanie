@@ -1,3 +1,5 @@
+'use strict';
+
 describe('nav-bar-directive_test', function () {
   // TODO:
 

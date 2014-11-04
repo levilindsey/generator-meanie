@@ -1,3 +1,5 @@
+'use strict';
+
 describe('svg-icon-directive_test', function () {
   // TODO:
 

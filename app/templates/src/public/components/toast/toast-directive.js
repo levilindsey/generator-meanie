@@ -1,5 +1,5 @@
 (function () {
-  angular.module('toastDirective', [])
+  angular.module('<%= appPrefix %>ToastDirective', [])
 
     .constant('toastTransitionDuration', 300)
 

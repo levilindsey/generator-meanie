@@ -1,5 +1,5 @@
 (function () {
-  angular.module('userService', [])
+  angular.module('<%= appPrefix %>UserService', [])
 
     .constant('someUserUrl', '/some-user-url')
 

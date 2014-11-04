@@ -1,3 +1,5 @@
+'use strict';
+
 describe('user-service_test', function () {
   // TODO:
 

@@ -1,5 +1,5 @@
 (function () {
-  angular.module('dataNameService', [])
+  angular.module('<%= appPrefix %>DataNameService', [])
 
     .constant('someDataUrl', '/some-data-url')
 

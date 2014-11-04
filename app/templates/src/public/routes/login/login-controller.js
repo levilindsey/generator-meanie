@@ -1,5 +1,5 @@
 (function () {
-  angular.module('loginController', [])
+  angular.module('<%= appPrefix %>LoginController', [])
 
     .controller('LoginCtrl', LoginCtrl);
 

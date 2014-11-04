@@ -1,7 +1,21 @@
-describe('home-controller_test', function () {
-  // TODO:
+'use strict';
 
-  it('should assert something', function () {
-    expect(true).toBe(true);
+describe('Controller: HomeCtrl', function () {
+
+  var home, scope;
+
+  beforeEach(module('<%= appPrefix %>HomeController'));
+
+  beforeEach(inject(function ($controller, $rootScope) {
+    scope = $rootScope.$new();
+    home = $controller('homeCtrl', {
+      $scope: scope
+    })
+  }));
+
+  // ---  --- //
+
+  it('should attach appName to the controller object', function () {
+    expect(home.appName).not.toBeUndefined();
   });
 });
