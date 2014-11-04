@@ -25,7 +25,7 @@
      * @param {Number} duration
      */
     function compileToast(text, width, duration) {
-      var template = '<toast text="' + text + '" width="' + width + '" duration="' + duration + '"></toast>';
+      var template = '<<%= appPrefix %>-toast text="' + text + '" width="' + width + '" duration="' + duration + '"></<%= appPrefix %>-toast>';
       var element = angular.element(template);
       return $compile(element)($rootScope);
     }

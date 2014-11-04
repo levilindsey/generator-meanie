@@ -35,7 +35,8 @@
   <link href="styles/main.css"
         rel="stylesheet">
 </head>
-<body ng-app="<%= appCamelCaseName %>App">
+<body ng-app="<%= appPrefix %>App">
+
 <!-- START SVG STORE -->
 <!-- TODO: copy the generated svg store to here-->
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="0" height="0" style="position:absolute">
@@ -53,5 +54,6 @@
 <script src="scripts/lib.js"></script>
 <script src="scripts/templates.js"></script>
 <script src="scripts/<%= appHyphenatedName %>.js"></script>
+
 </body>
 </html>

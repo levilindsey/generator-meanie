@@ -3,9 +3,9 @@
 
     .constant('toastTransitionDuration', 300)
 
-    .directive('toast', toast);
+    .directive('<%= appPrefix %>Toast', <%= appPrefix %>Toast);
 
-  function toast($timeout, toastTransitionDuration) {
+  function <%= appPrefix %>Toast($timeout, toastTransitionDuration) {
     return {
       restrict: 'E',
       scope: {

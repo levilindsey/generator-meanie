@@ -1,9 +1,9 @@
 (function () {
   angular.module('navBarDirective', [])
 
-    .directive('navBar', navBar);
+    .directive('<%= appPrefix %>NavBar', <%= appPrefix %>NavBar);
 
-  function navBar() {
+  function <%= appPrefix %>NavBar() {
     return {
       restrict: 'E',
       scope: {

@@ -16,6 +16,7 @@ var MeanieGenerator = yeoman.generators.Base.extend({
     var defaults = {
       appHumanReadableName: 'App Name',
       appHyphenatedName: 'app-name',
+      appPrefix: 'app',
       appDescription: 'App description.',
       appCompleteUrl: 'http://app-url.com',
       authorFullName: 'Your Name',
@@ -32,6 +33,11 @@ var MeanieGenerator = yeoman.generators.Base.extend({
         type: 'input',
         name: 'appHyphenatedName',
         message: 'What is the hyphenated name/ID of your app? (' + defaults.appHyphenatedName + ')'
+      },
+      {
+        type: 'input',
+        name: 'appPrefix',
+        message: 'What is the prefix you would like to use for Angular directives in your app? (' + defaults.appPrefix + ')'
       },
       {
         type: 'input',
@@ -64,6 +70,7 @@ var MeanieGenerator = yeoman.generators.Base.extend({
       this.appHumanReadableName = properties.appHumanReadableName || defaults.appHumanReadableName;
       this.appHyphenatedName = properties.appHyphenatedName || defaults.appHyphenatedName;
       this.appCamelCaseName = this._.camelize(properties.appHyphenatedName);
+      this.appPrefix = properties.appPrefix || defaults.appPrefix;
       this.appDescription = properties.appDescription || defaults.appDescription;
       this.appCompleteUrl = properties.appCompleteUrl || defaults.appCompleteUrl;
       this.appShortenedUrl = properties.appCompleteUrl.replace(/^.*:\/\//, '');

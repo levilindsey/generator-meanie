@@ -12,6 +12,8 @@
       getData: getData
     };
 
+    // ---  --- //
+
     function getData(parameters) {
       return $http.get(someDataUrl + '/')
         .then(function (response) {

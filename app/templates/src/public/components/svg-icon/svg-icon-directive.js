@@ -1,9 +1,9 @@
 (function () {
   angular.module('svgIconDirective', [])
 
-    .directive('svgIcon', svgIcon);
+    .directive('<%= appPrefix %>SvgIcon', <%= appPrefix %>SvgIcon);
 
-  function svgIcon() {
+  function <%= appPrefix %>SvgIcon() {
     return {
       restrict: 'E',
       replace: true,

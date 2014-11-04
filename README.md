@@ -5,12 +5,21 @@ _MEAN stack generator for [Yeoman](http://yeoman.io) with gulp. Loosely follows 
 
 This project is an on-going effort to collect common patterns and processes for web apps using the MEAN stack and gulp.
 
-This project is constantly evolving and likely has some partially completed components.
+This project is constantly evolving and possibly has some partially completed components.
 
 The contents of this project is strongly opinionated. This is all code that was developed by the original author for 
 his own personal use. That being said, it works great for him, so it will probably work great for you too!
 
-## [Getting Set Up](./docs/getting-set-up.md)
+Feedback, bug reports, feature requests, and pull requests are very welcome!
+
+## How to use
+
+```bash
+npm install -g generator-meanie
+yo meanie
+```
+
+See [Getting Set Up](./docs/getting-set-up.md) for a more complete, step-by-step guide for setting things up.
 
 ## Acknowledgements / Technology Stack
 
