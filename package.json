@@ -4,11 +4,14 @@
   "description": "MEAN stack generator for Yeoman with gulp. Loosely follows the Best Practice Recommendations for Angular App Structure",
   "license": "MIT",
   "main": "app/index.js",
-  "repository": "levisl176/generator-meanie",
+  "repository": {
+    "type" : "git",
+    "url" : "http://github.com/levisl176/generator-meanie.git"
+  },
   "author": {
     "name": "Levi Lindsey",
     "email": "levisl176@gmail.com",
-    "url": "https://github.com/levisl176"
+    "url": "http://jackieandlevi.com/levi"
   },
   "bugs": {
     "url": "http://github.com/levisl176/generator-meanie/issues"
