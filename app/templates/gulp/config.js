@@ -12,6 +12,7 @@ config.serverPath = '../' + config.srcPath + '/server';
 
 config.scriptsDist = config.distPath + '/scripts';
 config.stylesDist = config.distPath + '/styles';
+config.imageDist = config.distPath + '/images';
 
 config.serverMainPath = config.serverPath + '/main';
 

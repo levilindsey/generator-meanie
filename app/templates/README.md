@@ -17,6 +17,7 @@ This project uses technology from a number of third-parties. These technologies 
 - [SASS](http://sass-lang.com/)
 - [Yeoman](http://yeoman.io/)
 - [Git](http://git-scm.com/)
+- [generator-meanie](https://github.com/levisl176/generator-meanie)
 - Numerous other packages that are available via [NPM](http://npmjs.org/) 
   (these are listed within the `package.json` file)
 - Numerous other packages that are available via [Bower](http://bower.io/) 
