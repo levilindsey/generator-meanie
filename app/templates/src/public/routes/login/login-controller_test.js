@@ -1,9 +1,22 @@
 'use strict';
 
-describe('login-controller_test', function () {
-  // TODO:
+describe('Controller: LoginCtrl', function () {
 
-  it('should assert something', function () {
-    expect(true).toBe(true);
+  var login, scope;
+
+  beforeEach(module('<%= appPrefix %>App'));
+
+  beforeEach(inject(function ($controller, $rootScope) {
+    scope = $rootScope.$new();
+    login = $controller('LoginCtrl', {
+      $scope: scope
+    })
+  }));
+
+  // ---  --- //
+
+  it('should ...', function () {
+    // TODO:
+    expect(true).toBeTruthy();
   });
 });

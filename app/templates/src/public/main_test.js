@@ -1,6 +1,6 @@
 'use strict';
 
-describe('Main Module: <%= appPrefix %>App', function () {
+describe('Module: <%= appPrefix %>App', function () {
 
   var rootScope;
 
@@ -13,6 +13,6 @@ describe('Main Module: <%= appPrefix %>App', function () {
   // ---  --- //
 
   it('should attach routeState to the rootScope', function () {
-    expect(rootScope.routeState).not.toBeUndefined();
+    expect(rootScope.routeState).toBeDefined();
   });
 });

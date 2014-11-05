@@ -4,11 +4,11 @@ describe('Controller: HomeCtrl', function () {
 
   var home, scope;
 
-  beforeEach(module('<%= appPrefix %>HomeController'));
+  beforeEach(module('<%= appPrefix %>App'));
 
   beforeEach(inject(function ($controller, $rootScope) {
     scope = $rootScope.$new();
-    home = $controller('homeCtrl', {
+    home = $controller('HomeCtrl', {
       $scope: scope
     })
   }));
@@ -16,6 +16,6 @@ describe('Controller: HomeCtrl', function () {
   // ---  --- //
 
   it('should attach appName to the controller object', function () {
-    expect(home.appName).not.toBeUndefined();
+    expect(home.appName).toBeDefined();
   });
 });

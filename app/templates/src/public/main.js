@@ -6,7 +6,7 @@
     'ui.router',
 
     // As part of the build process, all partials are automatically added the angular template cache
-    '<%= appPrefix %>Templates',
+    'templates',
 
     // Miscellaneous
     '<%= appPrefix %>Constants',
@@ -18,13 +18,15 @@
     '<%= appPrefix %>NavBarDirective',
     '<%= appPrefix %>SvgIconDirective',
     '<%= appPrefix %>ToastDirective',
+    '<%= appPrefix %>ToastService',
 
     // Models
     '<%= appPrefix %>DataNameService',
     '<%= appPrefix %>UserService',
 
     // Routes
-    '<%= appPrefix %>HomeController'
+    '<%= appPrefix %>HomeController',
+    '<%= appPrefix %>LoginController'
   ])
 
     .run(function ($rootScope) {

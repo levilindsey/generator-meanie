@@ -1,9 +1,13 @@
 'use strict';
 
-describe('routes_test', function () {
-  // TODO:
+describe('Module: <%= appPrefix %>Routes', function () {
 
-  it('should assert something', function () {
-    expect(true).toBe(true);
+  beforeEach(module('<%= appPrefix %>App'));
+
+  // ---  --- //
+
+  it('should ...', function () {
+    // TODO:
+    expect(true).toBeTruthy();
   });
 });
