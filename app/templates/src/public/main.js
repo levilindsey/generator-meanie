@@ -1,32 +1,37 @@
 'use strict';
 
-angular.module('<%= appCamelCaseName %>App', [
-  // Third-party libraries
-  'ui.router',
+(function () {
+  angular.module('<%= appPrefix %>App', [
+    // Third-party libraries
+    'ui.router',
 
-  // As part of the build process, all partials are automatically added the angular template cache
-  'templates',
+    // As part of the build process, all partials are automatically added the angular template cache
+    'templates',
 
-  // Helpers
-  'constants',
-  'routes',
-//  'someFilter',
-//  'someService',
+    // Miscellaneous
+    '<%= appPrefix %>Constants',
+    '<%= appPrefix %>Routes',
+//  '<%= appPrefix %>SomeFilter',
+//  '<%= appPrefix %>SomeService',
 
-  // Components
-  'svgIconDirectives',
-  'toastDirectives',
+    // Components
+    '<%= appPrefix %>NavBarDirective',
+    '<%= appPrefix %>SvgIconDirective',
+    '<%= appPrefix %>ToastDirective',
+    '<%= appPrefix %>ToastService',
 
-  // Models
-  'dataNameService',
-  'userService',
+    // Models
+    '<%= appPrefix %>DataNameService',
+    '<%= appPrefix %>UserService',
 
-  // Routes
-  'homeController'
-])
+    // Routes
+    '<%= appPrefix %>HomeController',
+    '<%= appPrefix %>LoginController'
+  ])
 
     .run(function ($rootScope) {
       $rootScope.routeState = {};
 
       // TODO:
     });
+})();

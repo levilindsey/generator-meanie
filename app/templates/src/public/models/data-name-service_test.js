@@ -1,7 +1,10 @@
-// TODO:
+'use strict';
 
-describe('component-name_test', function () {
-  it('should assert something', function () {
-    expect(true).toBe(true);
-  });
+describe('Service: DataName', function () {
+
+  beforeEach(module('<%= appPrefix %>App'));
+
+  // ---  --- //
+
+  // TODO:
 });

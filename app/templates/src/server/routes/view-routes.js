@@ -35,5 +35,5 @@ function handleHomeRequest(req, res) {
  * @param {Object} res
  */
 function handleInvalidRequest(req, res) {
-  res.status(404).render(config.pageMissingPath, {pageName: req.host + req.path});
+  res.status(404).render(config.pageMissingPath, {pageName: req.hostname + req.path});
 }

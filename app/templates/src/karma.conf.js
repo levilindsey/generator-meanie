@@ -1,21 +1,18 @@
 // Karma configuration
 
 module.exports = function (config) {
+  var gulpConfig = require('../gulp/config');
+
   config.set({
     // base path that will be used to resolve all patterns (eg. files, exclude)
-    basePath: '',
+    basePath: '../',
 
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
     frameworks: ['jasmine'],
 
     // list of files / patterns to load in the browser
-    files: [
-      'dist/lib.js',
-      'dist/app.js',
-      'dist/templates.js',
-      'src/**/*_test.js'
-    ],
+    files: gulpConfig.allFilesForFrontEndTests,
 
     // list of files to exclude
     exclude: [
@@ -24,7 +21,7 @@ module.exports = function (config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-
+      'src/public/**/*.html': ['ng-html2js']// TODO: update this path to be more precise and within the config
     },
 
     // test results reporter to use

@@ -1,8 +1,8 @@
 var gulp = require('gulp');
-var plugins = require("gulp-load-plugins")({lazy: false});
+var plugins = require('gulp-load-plugins')({lazy: false});
 var config = require('./config');
 
-gulp.task('server', config.buildTasks, function () {
+gulp.task('server', ['watch'], function () {
   gulp.start('custom-server');
 });
 

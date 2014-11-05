@@ -1,49 +1,55 @@
-angular.module('toastService', [])
+(function () {
+  angular.module('<%= appPrefix %>ToastService', [])
 
-    .factory('Toast', function($rootScope, $compile) {
-      var Toast;
+    .factory('Toast', Toast);
 
-      var rootElement = angular.element(document.querySelector('[ng-app]'));
+  function Toast($rootScope, $compile) {
+    var Toast;
 
-      var defaultWidth = 200;
-      var defaultDuration = 2400;
-      var topPosition = 20;
+    var rootElement = angular.element(document.querySelector('[ng-app]'));
 
-      /**
-       * @param {string} text
-       * @param {number} width
-       * @param {number} duration
-       */
-      function compileToast(text, width, duration) {
-        var template = '<toast text="' + text + '" width="' + width + '" duration="' + duration + '"></toast>';
-        var element = angular.element(template);
-        return $compile(element)($rootScope);
-      }
+    var defaultWidth = 200;
+    var defaultDuration = 2400;
+    var topPosition = 20;
 
-      /**
-       * @param {string} text
-       * @param {number} [width=300]
-       * @param {number} [duration=2400]
-       */
-      function addToast(text, width, duration) {
-        var element;
+    Toast = {
+      toast: addToast,
+      notYetImplemented: notYetImplemented
+    };
 
-        width = width || defaultWidth;
-        duration = duration || defaultDuration;
+    // ---  --- //
 
-        element = compileToast(text, width, duration);
-        rootElement.append(element);
-        element.css('top', topPosition + 'px');
-      }
+    /**
+     * @param {String} text
+     * @param {Number} width
+     * @param {Number} duration
+     */
+    function compileToast(text, width, duration) {
+      var template = '<<%= appPrefix %>-toast text="' + text + '" width="' + width + '" duration="' + duration + '"></<%= appPrefix %>-toast>';
+      var element = angular.element(template);
+      return $compile(element)($rootScope);
+    }
 
-      function notYetImplemented() {
-        addToast('Not yet implemented');
-      }
+    /**
+     * @param {String} text
+     * @param {Number} [width=300]
+     * @param {Number} [duration=2400]
+     */
+    function addToast(text, width, duration) {
+      var element;
 
-      Toast = {
-        toast: addToast,
-        notYetImplemented: notYetImplemented
-      };
+      width = width || defaultWidth;
+      duration = duration || defaultDuration;
 
-      return Toast;
-    });
+      element = compileToast(text, width, duration);
+      rootElement.append(element);
+      element.css('top', topPosition + 'px');
+    }
+
+    function notYetImplemented() {
+      addToast('Not yet implemented');
+    }
+
+    return Toast;
+  }
+})();

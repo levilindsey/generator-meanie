@@ -1,45 +1,61 @@
-angular.module('routes', [])
+(function () {
+  angular.module('<%= appPrefix %>Routes', [])
 
-    .config(function ($stateProvider, $urlRouterProvider) {
-      $urlRouterProvider.otherwise('/home');
+    .config(config)
+    .run(run);
 
-      $stateProvider
-          .state('home', {
-            url: '/home',
-            templateUrl: 'routes/home/home.html',
-            controller: 'HomeCtrl'
-          })
-          .state('login', {
-            url: '/login',
-            templateUrl: 'routes/login/login.html',
-            controller: 'LoginCtrl'
-          });
-    })
+  function config($stateProvider, $urlRouterProvider) {
+    $urlRouterProvider.otherwise('/home');
 
-    .run(function ($rootScope) {
-      $rootScope.$on('$stateChangeStart', function (event, toState, toParams, fromState, fromParams) {
-        console.debug('$stateChangeStart', toState.name);
-
-        $rootScope.routeState.stateName = toState.name;
+    $stateProvider
+      .state('home', {
+        url: '/home',
+        templateUrl: 'routes/home/home.html',
+        controller: 'HomeCtrl',
+        controllerAs: 'home'
+      })
+      .state('login', {
+        url: '/login',
+        templateUrl: 'routes/login/login.html',
+        controller: 'LoginCtrl',
+        controllerAs: 'login'
       });
+  }
 
-      $rootScope.$on('$stateNotFound', function (event, unfoundState, fromState, fromParams) {
-        console.error('$stateNotFound', unfoundState.name);
-      });
+  function run($rootScope) {
+    $rootScope.$on('$stateChangeStart', stateChangeStart);
+    $rootScope.$on('$stateNotFound', stateNotFound);
+    $rootScope.$on('$stateChangeSuccess', stateChangeSuccess);
+    $rootScope.$on('$stateChangeError', stateChangeError);
+    $rootScope.$on('$viewContentLoading', viewContentLoading);
+    $rootScope.$on('$viewContentLoaded', viewContentLoaded);
 
-      $rootScope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState, fromParams) {
-        console.debug('$stateChangeSuccess', toState.name);
-      });
+    // ---  --- //
 
-      $rootScope.$on('$stateChangeError', function (event, toState, toParams, fromState, fromParams, error) {
-        console.error('$stateChangeError', toState.name, error);
-      });
+    function stateChangeStart(event, toState, toParams, fromState, fromParams) {
+      console.debug('$stateChangeStart', toState.name);
 
-      $rootScope.$on('$viewContentLoading', function (event) {
-        console.debug('$viewContentLoading');
-      });
+      $rootScope.routeState.stateName = toState.name;
+    }
 
-      $rootScope.$on('$viewContentLoaded', function (event) {
-        console.debug('$viewContentLoaded');
-      });
-    });
+    function stateNotFound(event, unfoundState, fromState, fromParams) {
+      console.error('$stateNotFound', unfoundState.name);
+    }
+
+    function stateChangeSuccess(event, toState, toParams, fromState, fromParams) {
+      console.debug('$stateChangeSuccess', toState.name);
+    }
+
+    function stateChangeError(event, toState, toParams, fromState, fromParams, error) {
+      console.error('$stateChangeError', toState.name, error);
+    }
+
+    function viewContentLoading(event) {
+      console.debug('$viewContentLoading');
+    }
+
+    function viewContentLoaded(event) {
+      console.debug('$viewContentLoaded');
+    }
+  }
+})();

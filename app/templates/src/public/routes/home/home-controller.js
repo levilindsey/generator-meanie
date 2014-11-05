@@ -1,6 +1,11 @@
-angular.module('homeController', [])
+(function () {
+  angular.module('<%= appPrefix %>HomeController', [])
 
-    .controller('HomeCtrl', function ($scope, appName) {
-      $scope.homeState = {};
-      $scope.homeState.appName = appName;
-    });
+    .controller('HomeCtrl', HomeCtrl);
+
+  function HomeCtrl(appName) {
+    var home = this;
+
+    home.appName = appName;
+  }
+})();

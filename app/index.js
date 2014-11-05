@@ -13,61 +13,69 @@ var MeanieGenerator = yeoman.generators.Base.extend({
   prompting: function () {
     var done = this.async();
 
-    // Greet the user
-    this.log(yosay(
-      'This generator will generate a web app project using the MEAN stack, and which follows the Best Practice Recommendations for Angular App Structure.'
-    ));
+    var defaults = {
+      appHumanReadableName: 'App Name',
+      appHyphenatedName: 'app-name',
+      appPrefix: 'app',
+      appDescription: 'App description.',
+      appCompleteUrl: 'http://app-url.com',
+      authorFullName: 'Your Name',
+      gitHubUsername: 'yourusername'
+    };
 
     var prompts = [
       {
         type: 'input',
         name: 'appHumanReadableName',
-        message: 'What is the human-readable name of your app?'
+        message: 'What is the human-readable name of your app? (' + defaults.appHumanReadableName + ')'
       },
       {
         type: 'input',
         name: 'appHyphenatedName',
-        message: 'What is the hyphenated name/ID of your app?'
+        message: 'What is the hyphenated name/ID of your app? (' + defaults.appHyphenatedName + ')'
+      },
+      {
+        type: 'input',
+        name: 'appPrefix',
+        message: 'What is the prefix you would like to use for Angular directives in your app? (' + defaults.appPrefix + ')'
       },
       {
         type: 'input',
         name: 'appDescription',
-        message: 'What is a short description of your app?'
+        message: 'What is a short description of your app? (' + defaults.appDescription + ')'
       },
       {
         type: 'input',
         name: 'appCompleteUrl',
-        message: 'What is the URL for your app? (include the protocol)'
+        message: 'What is the URL for your app (include the protocol)? (' + defaults.appCompleteUrl + ')'
       },
       {
         type: 'input',
         name: 'authorFullName',
-        message: 'What is your full name or your company\'s name?'
+        message: 'What is your full name or your company\'s name? (' + defaults.authorFullName + ')'
       },
       {
         type: 'input',
         name: 'gitHubUsername',
-        message: 'What is your GitHub username?'
-      },
-      {
-        type: 'input',
-        name: 'googleAnalyticsTrackingId',
-        message: 'What is your Google Analytics tracking ID?'
+        message: 'What is your GitHub username? (' + defaults.gitHubUsername + ')'
       }
     ];
 
+    // Greet the user
+    this.log(yosay(
+      'This generator will generate a web app project using the MEAN stack, and which follows the Best Practice Recommendations for Angular App Structure.'
+    ));
+
     this.prompt(prompts, function (properties) {
-      this.appHumanReadableName = properties.appHumanReadableName;
-      this.appHyphenatedName = properties.appHyphenatedName;
-      this.appCamelCaseName = properties.appHyphenatedName ?
-        this._.camelize(properties.appHyphenatedName): '<appName>';
-      this.appDescription = properties.appDescription;
-      this.appCompleteUrl = properties.appCompleteUrl;
-      this.appShortenedUrl = properties.appCompleteUrl ?
-        properties.appCompleteUrl.replace(/^.*:\/\//, '') : '<url-name>';
-      this.authorFullName = properties.authorFullName;
-      this.gitHubUsername = properties.gitHubUsername;
-      this.googleAnalyticsTrackingId = properties.googleAnalyticsTrackingId;
+      this.appHumanReadableName = properties.appHumanReadableName || defaults.appHumanReadableName;
+      this.appHyphenatedName = properties.appHyphenatedName || defaults.appHyphenatedName;
+      this.appCamelCaseName = this._.camelize(this.appHyphenatedName);
+      this.appPrefix = properties.appPrefix || defaults.appPrefix;
+      this.appDescription = properties.appDescription || defaults.appDescription;
+      this.appCompleteUrl = properties.appCompleteUrl || defaults.appCompleteUrl;
+      this.appShortenedUrl = this.appCompleteUrl.replace(/^.*:\/\//, '');
+      this.authorFullName = properties.authorFullName || defaults.authorFullName;
+      this.gitHubUsername = properties.gitHubUsername || defaults.gitHubUsername;
 
       done();
     }.bind(this));
@@ -77,10 +85,17 @@ var MeanieGenerator = yeoman.generators.Base.extend({
     app: function () {
       // Copy all template files to the new project
       this.directory('.', '.');
+
+      // Copy and rename the .gitignore gile. The base copy in the repo for the generator needs to not start with a
+      // period, so that git doesn't actually consider it as a functional .gitignore file for the generator project.
+      this.src.copy('gitignore', '.gitignore');
     }
   },
 
   end: function () {
+    // Remove the gitignore file (without the period) that was copied over during the bulk directory copy
+    this.dest.delete('gitignore');
+
     this.installDependencies();
   }
 });
