@@ -20,6 +20,7 @@ var MeanieGenerator = yeoman.generators.Base.extend({
       appDescription: 'App description.',
       appCompleteUrl: 'http://app-url.com',
       authorFullName: 'Your Name',
+      authorEmail: 'yourname@gmail.com',
       gitHubUsername: 'yourusername'
     };
 
@@ -56,6 +57,11 @@ var MeanieGenerator = yeoman.generators.Base.extend({
       },
       {
         type: 'input',
+        name: 'authorEmail',
+        message: 'What is your email? (' + defaults.authorEmail + ')'
+      },
+      {
+        type: 'input',
         name: 'gitHubUsername',
         message: 'What is your GitHub username? (' + defaults.gitHubUsername + ')'
       }
@@ -63,7 +69,7 @@ var MeanieGenerator = yeoman.generators.Base.extend({
 
     // Greet the user
     this.log(yosay(
-      'This generator will generate a web app project using the MEAN stack, and which follows the Best Practice Recommendations for Angular App Structure.'
+      'This generator will generate a web app project using the MEAN stack and gulp. This loosely follows the Best Practice Recommendations for Angular App Structure.'
     ));
 
     this.prompt(prompts, function (properties) {
@@ -75,6 +81,7 @@ var MeanieGenerator = yeoman.generators.Base.extend({
       this.appCompleteUrl = properties.appCompleteUrl || defaults.appCompleteUrl;
       this.appShortenedUrl = this.appCompleteUrl.replace(/^.*:\/\//, '');
       this.authorFullName = properties.authorFullName || defaults.authorFullName;
+      this.authorEmail = properties.authorEmail || defaults.authorEmail;
       this.gitHubUsername = properties.gitHubUsername || defaults.gitHubUsername;
 
       done();

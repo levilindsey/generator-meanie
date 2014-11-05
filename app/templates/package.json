@@ -4,6 +4,18 @@
   "description": "<%= appDescription %>",
   "license": "MIT",
   "private": false,
+  "repository": {
+    "type" : "git",
+    "url" : "http://github.com/<%= gitHubUsername %>/<%= appHyphenatedName %>.git"
+  },
+  "author": {
+    "name": "<%= authorFullName %>",
+    "email": "<%= authorEmail %>",
+    "url": "https://github.com/<%= gitHubUsername %>"
+  },
+  "bugs": {
+    "url": "http://github.com/<%= gitHubUsername %>/<%= appHyphenatedName %>/issues"
+  },
   "dependencies": {
     "q": "~1.0.1",
     "express": "~4.10.1",
