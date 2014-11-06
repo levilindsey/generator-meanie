@@ -1,5 +1,7 @@
 # <%= appHyphenatedName %>
 
+## _**This project is a work in progress**_
+
 #### <%= appDescription %>
 
 _See this running at [appShortenedUrl](<%= appCompleteUrl %>)!_
