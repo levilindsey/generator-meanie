@@ -26,12 +26,6 @@ gem install compass
 npm install -g gulp
 ```
 
-### Install grunt-cli globally
-
-```bash
-npm install -g grunt-cli
-```
-
 ### Install bower globally
 
 ```bash

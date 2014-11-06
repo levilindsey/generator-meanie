@@ -22,6 +22,8 @@ config.database = {};
 config.app.port = 3000;
 config.app.url = 'http://localhost:' + config.app.port;
 
+config.app.liveReloadPort = 35729;
+
 // Locations of some important files
 config.distPath = projectRoot + '/dist';
 config.viewsPath = projectRoot + '/src/server/views';

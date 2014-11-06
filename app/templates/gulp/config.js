@@ -23,6 +23,8 @@ config.vendorScriptDistFileName = 'lib.js';
 config.vendorStyleDistFileName = 'lib.css';
 config.angularTemplatesDistFileName = 'templates.js';
 
+config.distGlob = config.distPath + '/**';
+
 config.scriptsDistFilePath = config.scriptsDist + '/' + config.scriptDistFileName;
 config.frontEndTestsSrc = config.publicPath + '/**/*_test.js';
 config.backEndTestsSrc = config.serverPath + '/**/*_test.js';
@@ -50,8 +52,6 @@ config.imagesSrc = config.resPath + '/images/**/*.+(png|jpg|gif)';
 config.mediaSrc = [config.resPath + '/**', '!' + config.imagesSrc];
 config.iconsSrc = config.resPath + '/images/icons/*.svg';
 config.deviceIconsSrc = config.resPath + '/images/device-icons/*';
-
-config.distGlob = config.distPath + '/**';
 
 config.vendorScriptsSrc =
     [config.bowerPath + '/**/*.js', '!' + config.bowerPath + '/**/*.min.js'];

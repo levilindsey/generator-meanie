@@ -1,22 +1,22 @@
 var gulp = require('gulp');
 var plugins = require('gulp-load-plugins')({lazy: false});
-var config = require('./config');
+var gulpConfig = require('./config');
 
-gulp.task('server', ['watch'], function () {
+gulp.task('server', ['watch', 'start-live-reload'], function () {
   gulp.start('custom-server');
 });
 
 // Useful for projects with custom server logic
 gulp.task('custom-server', function () {
-  require(config.serverMainPath);
+  require(gulpConfig.serverMainPath);
 });
 
 // Useful for front-end-only projects
 gulp.task('quick-server', function () {
-  return gulp.src(config.distPath)
+  return gulp.src(gulpConfig.distPath)
       .pipe(plugins.webserver({
-        host: config.host,
-        port: config.port,
+        host: gulpConfig.host,
+        port: gulpConfig.port,
         fallback: 'index.html',
         livereload: true,
         open: true
