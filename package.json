@@ -5,8 +5,8 @@
   "license": "MIT",
   "main": "app/index.js",
   "repository": {
-    "type" : "git",
-    "url" : "http://github.com/levisl176/generator-meanie.git"
+    "type": "git",
+    "url": "http://github.com/levisl176/generator-meanie.git"
   },
   "author": {
     "name": "Levi Lindsey",
@@ -29,9 +29,9 @@
     "yeoman-generator, mean, gulp, node, angular, mongo, express, sass, nodejs, angularjs, mongodb, gulpjs"
   ],
   "dependencies": {
+    "chalk": "^0.5.1",
     "yeoman-generator": "~0.17.7",
-    "chalk": "^0.5.0",
-    "yosay": "^0.3.0"
+    "yosay": "^1.0.0"
   },
   "devDependencies": {
     "mocha": "*"
