@@ -26,12 +26,6 @@ gem install compass
 npm install -g gulp
 ```
 
-### Install grunt-cli globally
-
-```bash
-npm install -g grunt-cli
-```
-
 ### Install bower globally
 
 ```bash
@@ -68,12 +62,6 @@ From within your project directory, run:
 
 ```bash
 gulp
-```
-
-_OR_
-
-```bash
-grunt serve
 ```
 
 ## Replace / Remove Initial Components as Needed
