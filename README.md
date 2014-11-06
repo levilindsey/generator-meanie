@@ -26,7 +26,9 @@ See [Getting Set Up](./docs/getting-set-up.md) for a more complete, step-by-step
 
 This project uses technology from a number of third-parties. These technologies include:
 
+- [Node.js](http://nodejs.org/)
 - [AngularJS](https://angularjs.org/)
+- [MongoDB](https://mongodb.org/)
 - [gulp.js](http://http://gulpjs.com/)
 - [SASS](http://sass-lang.com/)
 - [Yeoman](http://yeoman.io/)
