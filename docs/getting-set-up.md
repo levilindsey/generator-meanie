@@ -74,3 +74,7 @@ In particular, you might want to perform searches for these strings:
 - font-name
 - component-name
 - component-name_test
+
+## Live Reload
+
+[Live reload](http://livereload.com/) is a pretty cool feature that refreshes your page within the browser everytime you make a change to your code. The gulp tasks in this generator do include support for live reload, but you will need to install a [plugin/extension](http://feedback.livereload.com/knowledgebase/articles/86242-how-do-i-install-and-use-the-browser-extensions-) in your browser for this to work.

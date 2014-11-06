@@ -15,6 +15,7 @@ This project uses technology from a number of third-parties. These technologies 
 
 - [Node.js](http://nodejs.org/)
 - [AngularJS](https://angularjs.org/)
+- [MongoDB](https://mongodb.org/)
 - [gulp.js](http://http://gulpjs.com/)
 - [SASS](http://sass-lang.com/)
 - [Yeoman](http://yeoman.io/)
