@@ -3,12 +3,11 @@
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url] [![Dependency Status][depstat-image]][depstat-url] [![Flattr this git repo][flattr-image]][flattr-url]
 
 _MEAN stack generator for [Yeoman](http://yeoman.io) with gulp. Loosely follows the 
-[Best Practice Recommendations for Angular App Structure](https://docs.google.com/document/d/1XXMvReO8-Awi1EZXAXS4PzDzdNvV6pGcuaF4Q9821Es/pub), 
+[Best Practice Recommendations for Angular App Structure][best-practices-url], 
 and, in general, attempts to follow best practices throughout._
 
-This project is an on-going effort to collect common patterns and processes for web apps using the MEAN stack and gulp.
-
-This project is constantly evolving and possibly has some components that are only partially completed.
+This project is an on-going effort to collect common patterns and processes for web apps using the MEAN stack and gulp. 
+It is constantly evolving and possibly has some components that are only partially completed.
 
 The contents of this project is strongly opinionated. This is all code that was developed by the original author for 
 his own personal use. That being said, it works great for him, so it will probably work great for you too!
@@ -60,3 +59,5 @@ MIT
 
 [depstat-url]: https://david-dm.org/levisl176/generator-meanie
 [depstat-image]: https://david-dm.org/levisl176/generator-meanie.svg?style=flat
+
+[best-practices-url]: https://docs.google.com/document/d/1XXMvReO8-Awi1EZXAXS4PzDzdNvV6pGcuaF4Q9821Es/pub
