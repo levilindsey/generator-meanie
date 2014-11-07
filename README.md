@@ -1,6 +1,6 @@
 # generator-meanie
 
-[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url] [![Dependency Status][depstat-image]][depstat-url] [![Flattr this git repo][flattr-image]][flattr-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][depstat-image]][depstat-url] [![Flattr this git repo][flattr-image]][flattr-url]
 
 _MEAN stack generator for [Yeoman](http://yeoman.io) with gulp. Loosely follows the 
 [Best Practice Recommendations for Angular App Structure][best-practices-url], 
@@ -46,18 +46,18 @@ MIT
 
 
 [flattr-url]: https://flattr.com/submit/auto?user_id=levisl176&url=github.com/levisl176/generator-meanie&title=generator-meanie&language=javascript&tags=github&category=software
-[flattr-image]: http://api.flattr.com/button/flattr-badge-large.png?style=flat
+[flattr-image]: http://api.flattr.com/button/flattr-badge-large.png
 
 [npm-url]: https://npmjs.org/package/generator-meanie
-[npm-image]: https://badge.fury.io/js/generator-meanie.png?style=flat
+[npm-image]: https://badge.fury.io/js/generator-meanie.png
 
 [travis-url]: https://travis-ci.org/levisl176/generator-meanie
-[travis-image]: https://secure.travis-ci.org/levisl176/generator-meanie.png?branch=master&style=flat
+[travis-image]: https://secure.travis-ci.org/levisl176/generator-meanie.png?branch=master
 
 [coveralls-url]: https://coveralls.io/r/levisl176/text-animation
 [coveralls-image]: https://img.shields.io/coveralls/levisl176/text-animation.svg?style=flat
 
 [depstat-url]: https://david-dm.org/levisl176/generator-meanie
-[depstat-image]: https://david-dm.org/levisl176/generator-meanie.svg?style=flat
+[depstat-image]: https://david-dm.org/levisl176/generator-meanie.svg
 
 [best-practices-url]: https://docs.google.com/document/d/1XXMvReO8-Awi1EZXAXS4PzDzdNvV6pGcuaF4Q9821Es/pub
