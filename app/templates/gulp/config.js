@@ -53,10 +53,31 @@ config.mediaSrc = [config.resPath + '/**', '!' + config.imagesSrc];
 config.iconsSrc = config.resPath + '/images/icons/*.svg';
 config.deviceIconsSrc = config.resPath + '/images/device-icons/*';
 
-config.vendorScriptsSrc =
-    [config.bowerPath + '/**/*.js', '!' + config.bowerPath + '/**/*.min.js'];
-config.vendorStylesSrc =
-    [config.bowerPath + '/**/*.css', '!' + config.bowerPath + '/**/*.min.css'];
+// TODO: these source arrays need to be manually kept up-to-date with the front-end libraries that are used in this app
+config.vendorScriptsSrc = [
+  config.bowerPath + '/angular/angular.js',
+  config.bowerPath + '/angular-animate/angular-animate.js',
+  config.bowerPath + '/angular-aria/angular-aria.js',
+  config.bowerPath + '/angular-material/angular-material.js',
+  config.bowerPath + '/angular-ui-router/release/angular-ui-router.js',
+  config.bowerPath + '/hammerjs/hammer.js'
+];
+config.vendorScriptsMinSrc = [
+  config.bowerPath + '/angular/angular.min.js',
+  config.bowerPath + '/angular-animate/angular-animate.min.js',
+  config.bowerPath + '/angular-aria/angular-aria.min.js',
+  config.bowerPath + '/angular-material/angular-material.min.js',
+  config.bowerPath + '/angular-ui-router/release/angular-ui-router.min.js',
+  config.bowerPath + '/hammerjs/hammer.min.js'
+];
+config.vendorStylesSrc = [
+  config.bowerPath + '/angular-material/angular-material.css',
+  config.bowerPath + '/angular-material/themes/brown-theme.css'
+];
+config.vendorStylesMinSrc = [
+  config.bowerPath + '/angular-material/angular-material.min.css',
+  config.bowerPath + '/angular-material/themes/brown-theme.css'
+];
 
 // --- Front-end routes --- //
 
