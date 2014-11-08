@@ -49,15 +49,19 @@ MIT
 [flattr-image]: http://api.flattr.com/button/flattr-badge-large.png
 
 [npm-url]: https://npmjs.org/package/generator-meanie
-[npm-image]: https://badge.fury.io/js/generator-meanie.png
+[npm-image]: http://img.shields.io/npm/v/generator-meanie.svg?style=flat-square
+[npm-image-old]: https://badge.fury.io/js/generator-meanie.png
 
 [travis-url]: https://travis-ci.org/levisl176/generator-meanie
-[travis-image]: https://secure.travis-ci.org/levisl176/generator-meanie.png?branch=master
+[travis-image]: http://img.shields.io/travis/levisl176/generator-meanie/master.svg?style=flat-square
+[travis-image-old]: https://secure.travis-ci.org/levisl176/generator-meanie.png?branch=master
 
-[coveralls-url]: https://coveralls.io/r/levisl176/text-animation
-[coveralls-image]: https://img.shields.io/coveralls/levisl176/text-animation.svg?style=flat
+[coveralls-url]: https://coveralls.io/r/levisl176/generator-meanie
+[coveralls-image]: http://img.shields.io/coveralls/levisl176/generator-meanie/master.svg?style=flat-square
+[coveralls-image-old]: https://img.shields.io/coveralls/levisl176/generator-meanie.svg?style=flat
 
 [depstat-url]: https://david-dm.org/levisl176/generator-meanie
-[depstat-image]: https://david-dm.org/levisl176/generator-meanie.svg
+[depstat-image]: http://img.shields.io/david/levisl176/generator-meanie.svg?style=flat-square
+[depstat-image-old]: https://david-dm.org/levisl176/generator-meanie.svg
 
 [best-practices-url]: https://docs.google.com/document/d/1XXMvReO8-Awi1EZXAXS4PzDzdNvV6pGcuaF4Q9821Es/pub
