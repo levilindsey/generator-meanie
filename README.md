@@ -2,9 +2,9 @@
 
 [![License Status][license-image]][license-url]
 [![NPM version][npm-image]][npm-url]
+[![Downloads Status][downloads-image]][downloads-url]
 [![Build Status][travis-image]][travis-url]
 [![Dependency Status][depstat-image]][depstat-url]
-[![Downloads Status][downloads-image]][downloads-url]
 [![Flattr this git repo][flattr-image]][flattr-url]
 
 _[MEAN stack][mean-url] generator for [Yeoman][yeoman-url] with [gulp][gulp-url]. Loosely follows the 
