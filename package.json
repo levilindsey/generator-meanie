@@ -1,6 +1,6 @@
 {
   "name": "generator-meanie",
-  "version": "0.3.5",
+  "version": "0.3.6",
   "description": "MEAN stack generator for Yeoman with gulp. Loosely follows the Best Practice Recommendations for Angular App Structure",
   "license": "MIT",
   "main": "app/index.js",
