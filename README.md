@@ -1,8 +1,10 @@
 # generator-meanie
 
-[![NPM version][npm-image]][npm-url] 
-[![Build Status][travis-image]][travis-url] 
-[![Dependency Status][depstat-image]][depstat-url] 
+[![License Status][license-image]][license-url]
+[![NPM version][npm-image]][npm-url]
+[![Downloads Status][downloads-image]][downloads-url]
+[![Build Status][travis-image]][travis-url]
+[![Dependency Status][depstat-image]][depstat-url]
 [![Flattr this git repo][flattr-image]][flattr-url]
 
 _[MEAN stack][mean-url] generator for [Yeoman][yeoman-url] with [gulp][gulp-url]. Loosely follows the 
@@ -66,6 +68,12 @@ MIT
 [depstat-url]: https://david-dm.org/levisl176/generator-meanie
 [depstat-image]: http://img.shields.io/david/levisl176/generator-meanie.svg?style=flat-square
 [depstat-image-old]: https://david-dm.org/levisl176/generator-meanie.svg
+
+[license-url]: https://github.com/levisl176/generator-meanie/blob/master/LICENSE
+[license-image]: http://img.shields.io/npm/l/generator-meanie.svg?style=flat-square
+
+[downloads-url]: https://npmjs.org/package/generator-meanie
+[downloads-image]: http://img.shields.io/npm/dm/generator-meanie.svg?style=flat-square
 
 [angular-best-practices-url]: https://docs.google.com/document/d/1XXMvReO8-Awi1EZXAXS4PzDzdNvV6pGcuaF4Q9821Es/pub
 [mean-url]: http://en.wikipedia.org/wiki/MEAN
