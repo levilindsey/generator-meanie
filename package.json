@@ -26,7 +26,7 @@
     "app"
   ],
   "keywords": [
-    "yeoman-generator, mean, gulp, node, angular, mongo, express, sass, nodejs, angularjs, mongodb, gulpjs"
+    "yeoman-generator, mean, gulp, node, angular, mongo, express, sass, mean-stack, nodejs, angularjs, mongodb, gulpjs"
   ],
   "dependencies": {
     "chalk": "^0.5.1",
