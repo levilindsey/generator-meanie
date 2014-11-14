@@ -69,7 +69,7 @@ var MeanieGenerator = yeoman.generators.Base.extend({
 
     // Greet the user
     this.log(yosay(
-      'This generator will generate a web app project using the MEAN stack and gulp. This loosely follows the Best Practice Recommendations for Angular App Structure.'
+      'This generator will generate a web app project using the MEAN stack and gulp. This follows the Best Practice Recommendations for Angular App Structure.'
     ));
 
     this.prompt(prompts, function (properties) {
