@@ -13,20 +13,21 @@ follow best practices throughout._
 
 ## What this is
 
-- The main goal of this generator is to create a highly componentized file structure for both 
+- **Modular**: The main goal of this generator is to create a highly componentized file structure for both 
   [front-end][angular-best-practices-url] and server-side code. This helps to keep your code modular, scalable, and 
   easier to understand.
-- This includes a wide array of gulp tasks for optimizing front-end performance and streamlining your development 
-  process.
-- This creates a comprehensive boilerplate infrastructure for a end-to-end web application using the MEAN stack. This 
-  likely includes some extra bells and whistles that you may not want to include in your particular app. The goal of 
-  this project is to promote development through _subtractive_ synthesis. What this means is that, hopefully, this 
-  generator creates infrastructure that will handle most of the high-level problems in your web app, in addition to 
-  providing some other common features that you will likely remove.
-- This includes a testing infrastructure using the [Karma][karma-url] test runner and the [Jasmine][jasmine-url] test 
-  framework for testing the front-end code.
-- This uses the [SASS][sass-url] stylsheet language.
-- This uses the [UI-Router][ui-router-url] library for more powerful front-end routing and state management in Angular.
+- **Gulp tasks**: This includes a wide array of gulp tasks for optimizing front-end performance and streamlining your 
+  development process.
+- **App infrastructure**: This creates a comprehensive boilerplate infrastructure for a end-to-end web application 
+  using the MEAN stack. This likely includes some extra bells and whistles that you may not want to include in your 
+  particular app. The goal of this project is to promote development through _subtractive_ synthesis. What this means 
+  is that, hopefully, this generator creates infrastructure that will handle most of the high-level problems in your 
+  web app, in addition to providing some other common features that you will likely remove.
+- **Tests**: This includes a testing infrastructure using the [Karma][karma-url] test runner and the 
+  [Jasmine][jasmine-url] test framework for testing the front-end code.
+- **SASS**: This uses the [SASS][sass-url] stylesheet language.
+- **UI-Router**: This uses the [UI-Router][ui-router-url] library for more powerful front-end routing and state 
+  management in Angular.
 
 ## Why use this generator instead of one of the many other options?
 
@@ -46,7 +47,7 @@ yo meanie
 See the [getting set up guide](./docs/getting-set-up.md) for a step-by-step walkthrough for setting things up and 
 running.
 
-## Technology Stack / Acknowledgements
+## Technology stack / acknowledgements
 
 This project uses technology from a number of third-parties. These technologies include:
 
@@ -70,7 +71,7 @@ Levi for his own personal use. That being said, it works great for him, so it wi
 
 Feedback, bug reports, feature requests, and pull requests are very welcome!
 
-## Next Steps
+## Next steps
 
 See the [project roadmap](./docs/roadmap.md) for Levi's future plans for this generator.
 
