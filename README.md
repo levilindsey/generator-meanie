@@ -58,8 +58,8 @@ This project uses technology from a number of third-parties. These technologies 
 - [SASS][sass-url]
 - [Yeoman][yeoman-url]
 - [Git][git-url]
-- Numerous other packages that are available via [NPM][npm-url] (these are listed within the `package.json` file)
-- Numerous other packages that are available via [Bower][bower-url] (these are listed within the `bower.json` file)
+- Numerous other packages that are available via [NPM][npm-url] (these are listed within the [`package.json`](./package.json) file)
+- Numerous other packages that are available via [Bower][bower-url] (these are listed within the [`bower.json`](./bower.json) file)
 
 ## Background
 
