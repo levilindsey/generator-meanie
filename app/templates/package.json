@@ -58,7 +58,8 @@
     "karma-chrome-launcher": "^0.1.5",
     "karma-jasmine": "^0.1.5",
     "karma-ng-html2js-preprocessor": "^0.1.2",
-    "karma-phantomjs-launcher": "^0.1.4"
+    "karma-phantomjs-launcher": "^0.1.4",
+    "protractor": "^1.4.0"
   },
   "engines": {
     "node": ">=0.10.0"
