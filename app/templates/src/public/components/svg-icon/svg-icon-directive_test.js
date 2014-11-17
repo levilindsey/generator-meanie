@@ -7,11 +7,11 @@ describe('Directive: <%= appPrefix %>-svg-icon', function () {
 
   beforeEach(module('<%= appPrefix %>App'));
 
-  beforeEach(inject(['$compile', '$rootScope', function ($c, $r) {
-    $compile = $c;
-    $rootScope = $r;
+  beforeEach(inject(function (_$compile_, _$rootScope_) {
+    $compile = _$compile_;
+    $rootScope = _$rootScope_;
     element = compileSvgIcon(iconId);
-  }]));
+  }));
 
   /**
    * @param {String} iconId

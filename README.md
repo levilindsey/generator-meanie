@@ -25,7 +25,7 @@ follow best practices throughout._
   providing some other common features that you will likely remove.
 - This includes a testing infrastructure using the [Karma][karma-url] test runner and the [Jasmine][jasmine-url] test 
   framework for testing the front-end code.
-- This uses the [SASS][sass-url] stylsheet language.
+- This uses the [SASS][sass-url] stylesheet language.
 - This uses the [UI-Router][ui-router-url] library for more powerful front-end routing and state management in Angular.
 
 ## Why use this generator instead of one of the many other options?
