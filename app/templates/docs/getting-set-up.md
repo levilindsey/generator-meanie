@@ -32,6 +32,12 @@ npm install -g gulp
 npm install -g bower
 ```
 
+### Install Protractor globally
+
+```bash
+npm install -g protractor
+```
+
 ## Install local Software
 
 ### Clone this project repository to your local machine

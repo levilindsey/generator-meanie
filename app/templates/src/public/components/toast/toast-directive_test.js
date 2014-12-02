@@ -9,11 +9,11 @@ describe('Directive: <%= appPrefix %>-toast', function () {
 
   beforeEach(module('<%= appPrefix %>App'));
 
-  beforeEach(inject(['$compile', '$rootScope', function ($c, $r) {
-    $compile = $c;
-    $rootScope = $r;
+  beforeEach(inject(function (_$compile_, _$rootScope_) {
+    $compile = _$compile_;
+    $rootScope = _$rootScope_;
     element = compileToast(text, width, duration);
-  }]));
+  }));
 
   /**
    * @param {String} text

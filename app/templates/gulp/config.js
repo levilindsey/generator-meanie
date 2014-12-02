@@ -1,7 +1,5 @@
 var config = {};
 
-// --- Server file-system paths --- //
-
 config.srcPath = 'src';
 config.distPath = 'dist';
 config.resPath = 'res';
@@ -78,12 +76,6 @@ config.vendorStylesMinSrc = [
   config.bowerPath + '/angular-material/angular-material.min.css',
   config.bowerPath + '/angular-material/themes/brown-theme.css'
 ];
-
-// --- Front-end routes --- //
-
-
-
-// ---  --- //
 
 config.buildTasks = [
   'scripts',
