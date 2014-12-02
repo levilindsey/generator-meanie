@@ -83,8 +83,7 @@ config.buildTasks = [
   'vendor-scripts',
   'vendor-styles',
   'angular-templates',
-  'svg-icons',
-  'index-templating',
+  'index',
   'copy-media',
   'copy-device-icons',
   'compress-images'

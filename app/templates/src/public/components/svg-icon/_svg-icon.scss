@@ -3,4 +3,13 @@
   position: relative;
   text-align: center;
   vertical-align: middle;
+
+  &[color=black] > use {
+    stroke: color(black);
+    fill: color(black);
+  }
+  &[color=white] > use {
+    stroke: color(white);
+    fill: color(white);
+  }
 }

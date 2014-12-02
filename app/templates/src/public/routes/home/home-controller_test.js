@@ -10,7 +10,7 @@ describe('Controller: HomeCtrl', function () {
     scope = $rootScope.$new();
     home = $controller('HomeCtrl', {
       $scope: scope
-    })
+    });
   }));
 
   // ---  --- //

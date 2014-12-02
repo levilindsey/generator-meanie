@@ -10,13 +10,13 @@ describe('Controller: LoginCtrl', function () {
     scope = $rootScope.$new();
     login = $controller('LoginCtrl', {
       $scope: scope
-    })
+    });
   }));
 
   // ---  --- //
 
   it('should ...', function () {
     // TODO:
-    expect(true).toBeTruthy();
+    expect().toBeDefined();
   });
 });

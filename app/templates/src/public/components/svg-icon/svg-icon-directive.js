@@ -8,7 +8,8 @@
       restrict: 'E',
       replace: true,
       scope: {
-        name: '@'
+        name: '@',
+        color: '@'
       },
       templateUrl: 'components/svg-icon/svg-icon.html',
       link: link
