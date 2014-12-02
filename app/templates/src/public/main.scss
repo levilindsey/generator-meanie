@@ -4,8 +4,11 @@ $colors: (
   black: #000000,
   white: #FFFFFF,
 
-  gray-1: #444444,
-  gray-2: #888888,
+  gray-1: #212121, // 87% opacity of black on white
+  gray-2: #727272, // 54% opacity of black on white
+  gray-3: #b8b8b8, // 26% opacity of black on white
+  gray-4: #dadada, // 12% opacity of black on white
+  gray-5: #f9f9f9,
 
   blue-1: #2299EE,
   blue-2: #77CCFF,
@@ -15,8 +18,8 @@ $colors: (
 );
 
 $font-sizes: (
-  xs: 16px,
-  s: 16px,
+  xs: 12px,
+  s: 14px,
   m: 16px,
   l: 22px,
   xl: 32px,
@@ -26,6 +29,11 @@ $font-sizes: (
 //  font-family: font-name;
 //  src: url('../fonts/**');// TODO: add custom font
 //}
+
+@mixin helvetica-stack() {
+  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+  font-weight: 300;
+}
 
 @function color($color-name) {
   @return map-get($colors, $color-name);
@@ -54,9 +62,37 @@ html {
 }
 
 body {
-  font-family: sans-serif;
-  color: color(black);
-  background-color: color(white);
+  @include helvetica-stack();
+
+  padding-bottom: 120px;
+
+  color: color(gray-1);
+  background-color: color(gray-5);
+}
+
+h1, h2, h3, h4, h5 {
+  text-align: center;
+//  font-family: ...;
+}
+
+a {
+//  color: color(...);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:visited {
+  //  color: color(...);
+}
+a:hover {
+  //  color: color(...);
+  text-decoration: underline;
+}
+a:active {
+  //  color: color(...);
+}
+
+#route-view {
+  min-height: 700px
 }
 
 // --- Include all partials --- //
