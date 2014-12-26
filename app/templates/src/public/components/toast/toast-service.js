@@ -47,7 +47,9 @@
     }
 
     function notYetImplemented() {
-      addToast('Not yet implemented');
+      var message = 'Not yet implemented';
+      console.warn(message);
+      addToast(message);
     }
 
     return Toast;
