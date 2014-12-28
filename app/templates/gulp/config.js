@@ -48,7 +48,7 @@ config.stylesSrc = config.publicPath + '/**/*.scss';
 config.angularTemplatesSrc = [config.publicPath + '/**/*.html', '!' + config.indexSrc];
 config.imagesSrc = config.resPath + '/images/**/*.+(png|jpg|gif)';
 config.mediaSrc = [config.resPath + '/**', '!' + config.imagesSrc];
-config.iconsSrc = config.resPath + '/images/icons/*.svg';
+config.svgImagesSrc = config.resPath + '/images/svg/*.svg';
 config.deviceIconsSrc = config.resPath + '/images/device-icons/*';
 
 // TODO: these source arrays need to be manually kept up-to-date with the front-end libraries that are used in this app
