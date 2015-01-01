@@ -21,7 +21,7 @@ gulp.task('index', function () {
 // ---  --- //
 
 function createSvgStream() {
-  return gulp.src(config.iconsSrc)
+  return gulp.src(config.svgImagesSrc)
     .pipe(plugins.plumber())
     .pipe(plugins.svgmin())
     .pipe(plugins.svgSprites({mode: 'symbols', svgId: 'svg-icon-%f'}));
