@@ -54,6 +54,14 @@ From within your project directory, run:
 npm install
 ```
 
+## Run the App Locally
+
+From within your project directory, run:
+
+```bash
+gulp
+```
+
 ## View the App
 
 From within your browser, navigate to:
