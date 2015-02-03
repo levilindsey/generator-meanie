@@ -2,11 +2,11 @@
 
 ## Install Global Software
 
-### [Install Git](http://git-scm.com/)
+### [Install Git][git-url]
 
-### [Install Node.js](http://nodejs.org/)
+### [Install Node.js][node-url]
 
-### [Install Ruby](https://www.ruby-lang.org/en/)
+### [Install Ruby][ruby-url]
 
 ### Install SASS
 
@@ -54,14 +54,24 @@ From within your project directory, run:
 npm install
 ```
 
-## Run the App Locally
+## View the App
 
-From within your project directory, run:
+From within your browser, navigate to:
 
 ```bash
-gulp
+localhost:3000
 ```
 
 ## Live Reload
 
-[Live reload](http://livereload.com/) is a pretty cool feature that refreshes your page within the browser everytime you make a change to your code. The gulp tasks in this project do include support for live reload, but you will need to install a [plugin/extension](http://feedback.livereload.com/knowledgebase/articles/86242-how-do-i-install-and-use-the-browser-extensions-) in your browser for this to work.
+[Live reload][live-reload-url] is a pretty cool feature that refreshes your page within the browser every time you make 
+a change to your code. The gulp tasks in this project do include support for live reload, but you will need to install 
+a [plugin/extension][live-reload-extension-url] in your browser for this to work.
+
+
+
+[git-url]: http://git-scm.com/
+[node-url]: http://nodejs.org/
+[ruby-url]: https://www.ruby-lang.org/en/
+[live-reload-url]: http://livereload.com/
+[live-reload-extension-url]: http://feedback.livereload.com/knowledgebase/articles/86242-how-do-i-install-and-use-the-browser-extensions-
