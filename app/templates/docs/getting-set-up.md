@@ -38,6 +38,12 @@ npm install -g bower
 npm install -g protractor
 ```
 
+### Install PhantomJS globally
+
+```bash
+npm install phantomjs -g
+```
+
 ## Install local Software
 
 ### Clone this project repository to your local machine
