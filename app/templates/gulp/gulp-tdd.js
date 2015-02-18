@@ -4,6 +4,6 @@ var config = require('./config');
 
 gulp.task('tdd', function () {
   gulp.src(config.allFilesForFrontEndTests)
-      .pipe(plugins.plumber())
-      .pipe(plugins.karma({configFile: config.karmaConfigPath, action: 'watch'}));
+    .pipe(plugins.plumber())
+    .pipe(plugins.karma({configFile: config.karmaConfigPath, action: 'watch'}));
 });

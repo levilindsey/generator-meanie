@@ -3,12 +3,18 @@ var plugins = require('gulp-load-plugins')({lazy: false});
 var config = require('./config');
 
 gulp.task('styles', function () {
-  return gulp.src(config.stylesSrc)
-      .pipe(plugins.plumber())
-      .pipe(plugins.rubySass({style: 'expanded'}))
-      .pipe(plugins.autoprefixer('last 2 version'))
-      .pipe(gulp.dest(config.stylesDist))
-      .pipe(plugins.rename({suffix: '.min'}))
-      .pipe(plugins.minifyCss())
-      .pipe(gulp.dest(config.stylesDist));
+  return plugins.rubySass(config.stylesMainSrc, {style: 'expanded'})
+    .on('error', handleError)
+    .pipe(plugins.plumber())
+    .pipe(plugins.sourcemaps.write())
+    .pipe(plugins.autoprefixer({browsers: ['last 2 versions']}))
+    .pipe(gulp.dest(config.stylesDist))
+    .pipe(plugins.rename({suffix: '.min'}))
+    .pipe(plugins.minifyCss())
+    .pipe(gulp.dest(config.stylesDist));
 });
+
+function handleError(error) {
+  console.error('SASS error', error);
+  throw error;
+}

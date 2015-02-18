@@ -14,11 +14,11 @@ gulp.task('custom-server', function () {
 // Useful for front-end-only projects
 gulp.task('quick-server', function () {
   return gulp.src(gulpConfig.distPath)
-      .pipe(plugins.webserver({
-        host: gulpConfig.host,
-        port: gulpConfig.port,
-        fallback: 'index.html',
-        livereload: true,
-        open: true
-      }));
+    .pipe(plugins.webserver({
+      host: gulpConfig.host,
+      port: gulpConfig.port,
+      fallback: 'index.html',
+      livereload: true,
+      open: true
+    }));
 });
